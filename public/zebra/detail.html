@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Geeks of London - Zebra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../css/zebra.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">BarCamp Berkshire 2</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">Logged in as Kevin Prince</p>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span8 offset2">
+          <h1>Jonathan Doe</h1>
+          <hr>
+          
+          <ul class="nav nav-pills">
+            <li><a href="#">Check In</a></li>
+            <li><a href="#">Add Wristband</a></li>
+          </ul>
+          
+          <ul class="nav nav-pills">
+            <li><a href="#">Check Out</a></li>
+            <li><a href="#">Swap Wristband</a></li>
+          </ul>
+          
+          <hr>
+          
+          <!--Basic Details-->
+          <form class="form-horizontal" action="dashboard.html">
+            <legend>Basic Details</legend>
+            <div class="control-group">
+              <label class="control-label">First Name</label>
+              <div class="controls">
+                <input type="text" value="John">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Last Name</label>
+              <div class="controls">
+                <input type="text" placeholder="e.g. Doe">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Email</label>
+              <div class="controls">
+                <input type="text" placeholder="e.g. john.doe@gmail.com">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Twitter</label>
+              <div class="controls">
+                <div class="input-prepend">
+                  <span class="add-on">@</span>
+                  <input type="text" placeholder="twitter">
+                </div>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Notes</label>
+              <div class="controls">
+                <textarea class="input-large" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                <button type="submit" class="btn">Update Attendee</button>
+              </div>
+            </div>
+          </form>
+          
+          <!--Ticket Details-->
+          
+          <form class="form-horizontal">
+            <legend>Ticket Details</legend>
+            <div class="control-group">
+              <label class="control-label">Ticket Type</label>
+              <div class="controls">
+                <select>
+                  <option>Attendee</option>
+                  <option>Sponsor</option>
+                  <option>VIP</option>
+                  <option>Crew</option>
+                </select>
+              </div>
+            </div>            
+            
+            <div class="control-group">
+              <div class="controls">
+                <button type="submit" class="btn">Update Ticket Type</button>
+              </div>
+            </div>
+          </form>
+          
+          <!--Statuses-->
+          
+          <div class="form-horizontal">
+            <legend>Tracking Data</legend>
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th>Confirmed</th>
+                  <th>Cancelled</th>
+                  <th>Showed Up</th>
+                  <th>On Site</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><i class="icon-ok"></i></td>
+                  <td><i class="icon-ok"></i></td>
+                  <td><i class="icon-ok"></i></td>
+                  <td><i class="icon-ok"></i></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <legend>Tracking Events</legend>
+            <ul>
+              <li>Confirmed at</li>
+              <li>Entry Scan</li>
+              <li>Exit Scan</li>
+              <li>Drank Beer</li>
+            </ul>
+            
+          </div>
+          
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Geeks of London 2013</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery.tablesorter.min.js"></script>
+    <script src="../js/zebra.js"></script>
+
+  </body>
+</html>

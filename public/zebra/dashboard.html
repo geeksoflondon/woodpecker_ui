@@ -1,0 +1,825 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Geeks of London - Zebra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../css/zebra.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">BarCamp Berkshire 2</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">Logged in as Kevin Prince</p>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <!--Actions-->
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Status:</li>
+              <li><a href="#">Expected - (100)</a></li>
+              <li><a href="#">Showed Up  - (100)</a></li>
+              <li><a href="#">On Site - (100)</a></li>
+              <li><a href="#">Off Site - (100)</a></li>
+              <li><a href="#">Confirmed - (100)</a></li>
+              <li><a href="#">Unconfirmed - (100)</a></li>
+              <li><a href="#">Cancelled - (100)</a></li>
+              <li class="nav-header">Badge Type:</li>
+              <li><a href="#">Attendee - (100)</a></li>
+              <li><a href="#">Sponsor - (100)</a></li>
+              <li><a href="#">VIP - (100)</a></li>
+              <li><a href="#">Crew - (100)</a></li>
+              <li><a href="#">Manager - (100)</a></li>
+            </ul>
+          </div><!--/.well -->
+          <a class="btn btn-block btn-success" href="manager-auth.html">Add Attendee</a>
+        </div><!--/span-->
+        <div class="span9">
+          <h4>Attendee Search</h4>
+          <hr>
+          <form id="search-form" class="input-append" action="dashboard.html" type="post">
+            <input id="search-box" 
+                   type="text" 
+                   data-provide="typeahead" 
+                   autocomplete="off" 
+                   class="input-xxlarge"
+                   placeholder="Start typing the name you are looking for:"
+            >
+            <button class="btn" type="button">Search</button>
+          </form>
+          
+          
+          <hr>
+          
+          <table id="attendees" class="table table-striped">
+            <thead>
+              <tr>
+                <th>First Name 
+                  <i class="icon-arrow-up"></i>
+                  <i class="icon-arrow-down"></i>
+                  <i class="icon-resize-vertical"></i>
+                </th>
+                <th>Last Name 
+                  <i class="icon-arrow-up"></i>
+                  <i class="icon-arrow-down"></i>
+                  <i class="icon-resize-vertical"></i>
+                </th>
+                <th>Type 
+                 <i class="icon-arrow-up"></i>
+                 <i class="icon-arrow-down"></i>
+                 <i class="icon-resize-vertical"></i>
+                </th>
+                <th>Status 
+                 <i class="icon-arrow-up"></i>
+                 <i class="icon-arrow-down"></i>
+                 <i class="icon-resize-vertical"></i>
+                </th>
+                <th>&nbsp;</th>
+ 
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Erin</td>
+                <td>Bowen</td>
+                <td>VIP</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>             
+ 
+              </tr>
+              <tr>
+                <td>Bruce</td>
+                <td>Myers</td>
+                <td>VIP</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Caleb</td>
+                <td>Bates</td>
+                <td>Attendee</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Maxwell</td>
+                <td>Schultz</td>
+                <td>Crew</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Charles</td>
+                <td>Cervantes</td>
+                <td>VIP</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Aretha</td>
+                <td>Valencia</td>
+                <td>VIP</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Lyle</td>
+                <td>Buckley</td>
+                <td>Manager</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Gareth</td>
+                <td>Strickland</td>
+                <td>Sponsor</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Robert</td>
+                <td>Andrews</td>
+                <td>Sponsor</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Gemma</td>
+                <td>Stone</td>
+                <td>VIP</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Audrey</td>
+                <td>Lane</td>
+                <td>Manager</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>August</td>
+                <td>Sosa</td>
+                <td>Attendee</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Sophia</td>
+                <td>Fulton</td>
+                <td>Attendee</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Elton</td>
+                <td>Dudley</td>
+                <td>Crew</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Sandra</td>
+                <td>Rose</td>
+                <td>Crew</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Chava</td>
+                <td>Garner</td>
+                <td>VIP</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Christian</td>
+                <td>Estrada</td>
+                <td>VIP</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Lionel</td>
+                <td>Houston</td>
+                <td>Sponsor</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Shelley</td>
+                <td>Barrera</td>
+                <td>VIP</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Evelyn</td>
+                <td>Meadows</td>
+                <td>Attendee</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Lucian</td>
+                <td>George</td>
+                <td>Crew</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Scott</td>
+                <td>Phillips</td>
+                <td>VIP</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Matthew</td>
+                <td>Ratliff</td>
+                <td>Sponsor</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Sydney</td>
+                <td>Bowers</td>
+                <td>Sponsor</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Minerva</td>
+                <td>Golden</td>
+                <td>VIP</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Steel</td>
+                <td>Schneider</td>
+                <td>Manager</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Vivien</td>
+                <td>Lyons</td>
+                <td>Attendee</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Erin</td>
+                <td>Pate</td>
+                <td>Attendee</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Lionel</td>
+                <td>Kaufman</td>
+                <td>Crew</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Nita</td>
+                <td>Lancaster</td>
+                <td>VIP</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Sydnee</td>
+                <td>Dillard</td>
+                <td>Crew</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Signe</td>
+                <td>Vinson</td>
+                <td>Attendee</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Alexa</td>
+                <td>Benson</td>
+                <td>Manager</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Margaret</td>
+                <td>Morrow</td>
+                <td>VIP</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Quon</td>
+                <td>Campos</td>
+                <td>Crew</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Celeste</td>
+                <td>Sutton</td>
+                <td>Crew</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Grant</td>
+                <td>Palmer</td>
+                <td>VIP</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Keaton</td>
+                <td>Kirby</td>
+                <td>Crew</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Hope</td>
+                <td>Sykes</td>
+                <td>VIP</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Brooke</td>
+                <td>Heath</td>
+                <td>Crew</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Ainsley</td>
+                <td>Brady</td>
+                <td>VIP</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Stuart</td>
+                <td>Huffman</td>
+                <td>Sponsor</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Nehru</td>
+                <td>Roberts</td>
+                <td>Attendee</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Henry</td>
+                <td>Myers</td>
+                <td>Attendee</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Whilemina</td>
+                <td>Gibbs</td>
+                <td>Crew</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Tashya</td>
+                <td>Barrett</td>
+                <td>Manager</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Hadassah</td>
+                <td>Phelps</td>
+                <td>VIP</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Chanda</td>
+                <td>Crosby</td>
+                <td>Crew</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Imelda</td>
+                <td>Nicholson</td>
+                <td>Manager</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Kristen</td>
+                <td>Booth</td>
+                <td>Crew</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Francesca</td>
+                <td>Arnold</td>
+                <td>Sponsor</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Robert</td>
+                <td>George</td>
+                <td>Attendee</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Juliet</td>
+                <td>Cobb</td>
+                <td>Sponsor</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Nissim</td>
+                <td>Andrews</td>
+                <td>VIP</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Justina</td>
+                <td>Meadows</td>
+                <td>VIP</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Darryl</td>
+                <td>Leonard</td>
+                <td>Sponsor</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Blossom</td>
+                <td>Graham</td>
+                <td>Sponsor</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Ariel</td>
+                <td>Grimes</td>
+                <td>Crew</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Olga</td>
+                <td>Burt</td>
+                <td>Attendee</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Oleg</td>
+                <td>Battle</td>
+                <td>Sponsor</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Shaeleigh</td>
+                <td>Shields</td>
+                <td>Attendee</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>August</td>
+                <td>Pitts</td>
+                <td>Attendee</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Nita</td>
+                <td>Wallace</td>
+                <td>Crew</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Halee</td>
+                <td>Simmons</td>
+                <td>Sponsor</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Laith</td>
+                <td>Wiley</td>
+                <td>Manager</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Basil</td>
+                <td>Miranda</td>
+                <td>Attendee</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Candace</td>
+                <td>Cantu</td>
+                <td>Manager</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>May</td>
+                <td>Vazquez</td>
+                <td>Crew</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Stephen</td>
+                <td>Cobb</td>
+                <td>Crew</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Nathaniel</td>
+                <td>Gardner</td>
+                <td>Manager</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Rudyard</td>
+                <td>Larsen</td>
+                <td>Manager</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Wynne</td>
+                <td>Mueller</td>
+                <td>Crew</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Elton</td>
+                <td>Terrell</td>
+                <td>VIP</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Jin</td>
+                <td>Boone</td>
+                <td>Sponsor</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Hermione</td>
+                <td>Neal</td>
+                <td>Crew</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Brooke</td>
+                <td>Lott</td>
+                <td>Manager</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Kim</td>
+                <td>Mclean</td>
+                <td>Manager</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Michelle</td>
+                <td>Zimmerman</td>
+                <td>Crew</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Jocelyn</td>
+                <td>Burns</td>
+                <td>VIP</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Kristen</td>
+                <td>George</td>
+                <td>Crew</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Fatima</td>
+                <td>Oconnor</td>
+                <td>Attendee</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Neville</td>
+                <td>Bolton</td>
+                <td>VIP</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Vivien</td>
+                <td>Sparks</td>
+                <td>Attendee</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Steel</td>
+                <td>Melton</td>
+                <td>Manager</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Ulysses</td>
+                <td>Long</td>
+                <td>VIP</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Eden</td>
+                <td>Nelson</td>
+                <td>Attendee</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Aimee</td>
+                <td>Tyson</td>
+                <td>Manager</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Nolan</td>
+                <td>Parrish</td>
+                <td>Attendee</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Helen</td>
+                <td>Cardenas</td>
+                <td>VIP</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Jackson</td>
+                <td>Chandler</td>
+                <td>Manager</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Dieter</td>
+                <td>Spencer</td>
+                <td>Manager</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Quentin</td>
+                <td>Baxter</td>
+                <td>Attendee</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Chandler</td>
+                <td>Tanner</td>
+                <td>VIP</td>
+                <td>On Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Caesar</td>
+                <td>Moreno</td>
+                <td>Manager</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Kimberley</td>
+                <td>Price</td>
+                <td>VIP</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Xandra</td>
+                <td>Hayes</td>
+                <td>Attendee</td>
+                <td>Off Site</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Audrey</td>
+                <td>Walsh</td>
+                <td>VIP</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Shelly</td>
+                <td>French</td>
+                <td>Sponsor</td>
+                <td>Expected</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Alfonso</td>
+                <td>Gaines</td>
+                <td>Sponsor</td>
+                <td>Cancelled</td>
+                <td><a class="btn" href="detail.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Ina</td>
+                <td>Carlson</td>
+                <td>Manager</td>
+                <td>Cancelled</td>
+ 
+              </tr>
+            </tbody>
+          </table>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Geeks of London 2013</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery.tablesorter.min.js"></script>
+    <script src="../js/zebra.js"></script>
+
+  </body>
+</html>

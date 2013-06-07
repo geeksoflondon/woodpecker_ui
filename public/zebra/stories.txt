@@ -1,0 +1,26 @@
+Navigate to /confirmations/#id
+Click "I am attending"
+Click "Confirm Badge"
+Click "Confirm When I am Attending"
+Should display "thankyou for confirming your ticket"
+
+Navigate to /confirmations/#id
+Click "I am attending"
+Change fname to "Steve"
+Change sname to "Jobs"
+Change twitter to "sjobs"
+Click "Confirm Badge"
+Click "Confirm When I am Attending"
+Should display "thankyou for confirming your ticket"
+Should display "Steve Jobs" as the name
+Should display "@sjobs" as twitter name
+
+Navigate to /confirmations/#id
+Click "I am attending"
+Click "Confirm Badge"
+
+
+Navigate to /confirmations/#id
+Click "I am not attending"
+Click "I definitely am not attending"
+Should display "thankyou for cancelling your ticket"

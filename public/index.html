@@ -1,87 +1,100 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/selfservice.css">
-    </head>
-    <body>
-      <header>
-        <h1>BarCamp Berkshire</h1>
-      </header>
-      <section>
-        <h2>Hello John Doe</h2>
-        <p>Are you coming to BarCamp Berkshire at The O2 July 20th to 21st ?</p>
-        <form>
-          <input type="submit" class="primary" value="I'm Coming">
-          <input type="submit" class="secondary"  value="I can't make it">
-        </form>
-      </section>
-      <section>
-        <h2>John, you sure you want to cancel?</h2>
-        <form>
-          <input type="submit" class="primary" value="Yes cancel my ticket!">
-          <input type="submit" class="secondary" value="No I am still coming.">
-        </form>
-      </section>
-      <section>
-        <h2>Check Your Badge</h2>
-        <form>
-            <fieldset>
-              <label for="first_name">First Name</label>
-              <input type="text" name="first_name">
-            </fieldset>
-            <fieldset>
-              <label for="last_name">Last Name</label>
-              <input type="text" name="last_name">
-            </fieldset>
-            <fieldset>
-              <label for="twitter">Twitter Name @</label>
-              <input type="text" name="twitter">
-            </fieldset>
-            <input type="submit" value="Save My Details">
-        </form>
-      </section>
-      <section>
-        <h2>When are you attending?</h2>
-        <form>
-            <fieldset>
-              <label for="saturday">Saturday</label>
-              <select name="saturday">
-                <option>Yes</option>
-                <option>No</option>
-              </select>
-            </fieldset>
-            <fieldset>
-              <label for="overnight">Overnight</label>
-              <select name="overnight">
-                <option>Yes</option>
-                <option>No</option>
-              </select>
-            </fieldset>
-            <fieldset>
-              <label for="sunday">Sunday</label>
-              <select name="sunday">
-                <option>Yes</option>
-                <option>No</option>
-              </select>
-            </fieldset>
-            <input type="submit" value="Save My Details">
-        </form>
-      </section>
-      <section>
-        <h2>You are now >STATUS>!!</h2>
-        <p>We look forward to seeing you soon</p>
-        <p>Questions or problems? email us <a href="mailto:help@geeksoflondon.com">help@geeksoflondon.com</a></p>
-      </section>
-    </body>
-</html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Geeks of London - Data Tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <!-- Le styles -->
+    <link href="../css/landing.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="masthead">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li><a href="/herder/index.html">Herder</a></li>
+                <li><a href="/woodpecker/index.html">Woodpecker</a></li>
+                <li><a href="/zebra/index.html">Zebra</a></li>
+                <li><a href="/badger/index.html">Badger</a></li>
+                <li><a href="/kitten/index.html">Kitten</a></li>
+                <li><a href="/koala/index.html">Koala</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Geeks of London</h1>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid">
+        <div class="span4">
+          <h2>Herder</h2>
+          <p>The admin interface for managing the herd of animals.</p>
+          <p><a class="btn" href="/herder/index.html">View details »</a></p>
+        </div>
+        <div class="span4">
+          <h2>Woodpecker</h2>
+          <p>Confirmation tool that gets attendees to confirm their tickets.</p>
+          <p><a class="btn" href="/woodpecker/index.html">View details »</a></p>
+       </div>
+       <div class="span4">
+          <h2>Zebra</h2>
+          <p>Allows staff at an event to manage attendees</p>
+          <p><a class="btn" href="/zebra/index.html">View details »</a></p>
+       </div>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid">
+        <div class="span4">
+          <h2>Badger</h2>
+          <p>Generates badges for people.</p>
+          <p><a class="btn" href="/badger/index.html">View details »</a></p>
+        </div>
+        <div class="span4">
+          <h2>Kitten</h2>
+          <p>A super friendly self service terminal like you get in tesco.</p>
+          <p><a class="btn" href="/kitten/index.html">View details »</a></p>
+       </div>
+       <div class="span4">
+          <h2>Koala</h2>
+          <p>Collects votes for best things, dinner etc.</p>
+          <p><a class="btn" href="/koala/index.html">View details »</a></p>
+       </div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; Geeks of London 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/bootstrap.js"></script>
+
+  </body>
+</html>
